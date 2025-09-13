@@ -15,10 +15,6 @@ public class PublicController {
     private UserService userService;
 
 
-    @GetMapping("/all-users")
-    public List<User> getAllUsers() {
-        return userService.getAll();
-    }
 
     @PostMapping("/create-user")
     public void createUser(@RequestBody User user){
